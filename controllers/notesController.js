@@ -1,6 +1,9 @@
 
+const notesService = require('../services/notesService');
+
 const getAllNotes = (request, response) => {
-    response.send('Get all notes - controller hit');
+    const allNotes = notesService.getAllNotes();
+    response.json(allNotes);
 };
 
 module.exports = {
