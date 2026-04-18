@@ -4,7 +4,8 @@
   "description": "A standalone backend service built with Node.js and Express that enables authenticated users to create, manage, and filter structured notes. The system supports dynamic tag-based filtering, keyword search, priority sorting, and modular route architecture, demonstrating backend fundamentals and scalable API design.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/Sohailkshaikh-117/structured-notes-api#readme",
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
